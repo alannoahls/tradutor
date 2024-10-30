@@ -9,7 +9,7 @@ def ler_documento(caminho_arquivo):
         return file.read()
 
 
-def traduzir_texto(texto, idioma_destino='en'):
+def traduzir_texto(texto, idioma_destino='pt'):
     translator = Translator()
     resultado = translator.translate(texto, dest=idioma_destino)
     return resultado.text
@@ -41,13 +41,13 @@ def obter_texto_da_url(url):
 
 
 # Execução
-url = 'https://pt.wikipedia.org/wiki/Ariana_Grande'  # URL da Wikipedia
+url = 'https://pt.wikipedia.org/wiki/Ariana_Grande'  # URL escolhida
 caminho_saida = 'documento_traduzido.txt'
 
 # Obter texto da URL, traduzir e salvar
 texto_url = obter_texto_da_url(url)
-if texto_url:  # Verifica se o texto foi obtido com sucesso
-    texto_traduzido = traduzir_texto(texto_url, 'pt')  # Alvo: inglês
+if texto_url:  # Verifica se o texto teve sucesso
+    texto_traduzido = traduzir_texto(texto_url, 'pt')  # Alvo: português
     print("Texto traduzido:", texto_traduzido)  # Imprime a tradução no terminal
     salvar_documento(caminho_saida, texto_traduzido)
     print("Tradução concluída e salva em:", caminho_saida)
