@@ -23,11 +23,11 @@ Assim você poderá gerenciar cada parte do projeto em arquivos separados que eu
 ## Como usar
 
 1. Execute o script `main.py`.
-2. O texto da página da Wikipedia será extraído e traduzido.
+2. O texto da página da URL será extraído e traduzido.
 3. O resultado será salvo em `documento_traduzido.txt`.
 
 ## Futuro
 
 - Planejo expandir este projeto para integrar com serviços do Azure, pois não consegui ter acesso ao portal Azure onde era pra ter sido feito o projeto mais robusto e com acesso ao OpenAI chatgpt
 - fiz esse para demonstrar que entendi o conteúdo da aula do bootcamp DIO
->>>>>>> b23b7b68c0165e3b060fbd21fb6e9db19871f7ce
+
