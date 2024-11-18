@@ -1,5 +1,4 @@
 
-=======
 # Tradutor 
 
 Este projeto é um tradutor simples em Python que extrai texto de URL e traduz para o idioma desejado.
